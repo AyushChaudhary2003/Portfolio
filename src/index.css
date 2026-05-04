@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #070710;
+  --bg2: #0d0d1f;
+  --bg3: #111128;
+  --surface: #181830;
+  --border: rgba(110,80,255,0.18);
+  --accent: #7c5cff;
+  --accent2: #00cfff;
+  --accent3: #ff6bbd;
+  --green: #00e5a0;
+  --text: #eeeef8;
+  --muted: #7878a0;
+  --card: rgba(18,18,42,0.85);
+  --glow: rgba(124,92,255,0.35);
+  --glow2: rgba(0,207,255,0.25);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: linear-gradient(var(--accent), var(--accent2)); border-radius: 3px; }
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: 'Inter', sans-serif; }
