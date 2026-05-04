@@ -98,7 +98,7 @@ export default function Contact() {
                   {field.label}
                 </label>
                 <input
-                  id={field.id} type={field.type} placeholder={field.placeholder} required
+                  id={field.id} name={field.id} type={field.type} placeholder={field.placeholder} required
                   style={{
                     width: '100%', padding: '0.75rem 1rem',
                     background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(110,80,255,0.18)',
@@ -113,7 +113,7 @@ export default function Contact() {
             <div>
               <label htmlFor="message" style={{ display: 'block', fontSize: '0.78rem', color: '#7878a0', marginBottom: '0.4rem', fontWeight: 500 }}>Message</label>
               <textarea
-                id="message" required placeholder="Hi Ayush, I'd love to discuss an opportunity..." rows={4}
+                id="message" name="message" required placeholder="Hi Ayush, I'd love to discuss an opportunity..." rows={4}
                 style={{
                   width: '100%', padding: '0.75rem 1rem',
                   background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(110,80,255,0.18)',
